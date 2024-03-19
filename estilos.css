@@ -1,0 +1,27 @@
+@font-face { 
+    font-family: heineken;
+    src: url('fuentes/heineken.ttf');
+}
+.heineken {font-family: heineken;}
+@font-face {
+    font-family: montse;
+    src: url('fuentes/montse.ttf');
+}
+.montse {font-family: montse;}
+body{background-color: rgb(248, 227, 220);}
+h1{color: brown;font-family: heineken; text-align: center;font-size: 100px;}
+h2{text-align: center;color: brown; font-family: heineken;}
+.tabla{border-collapse: collapse;color: brown;margin-left: auto;margin-right: auto;}
+.tabla td{border:2px solid brown; font-family: montse;}
+.tabla caption{font-family: heineken;font-size: 30px;}
+#separador{color: brown;}
+#footer{color: brown;font-weight: bold;}
+#tablaarticulo{background-color: brown;}
+.pie{color: white;}
+#menu_h {float:center; width: 200%; background: brown;;}
+#menu_h li{float:center;font-family: NotCourierSans;display:inline; margin: 0; padding: 0; }
+#menu_h a {float:center;font-family: NotCourierSans; font-weight: bold; float:left; display: block; margin: 10px; padding: 5px; text-decoration: none; color: #000; border-top-right-radius: 8px; background-color: rgb(216, 105, 105); text-align:center;}
+#menu_h a:hover {float:center;color:brown;font-family: NotCourierSans; font-size: 1.2em; background-color: rgb(255, 255, 255); text-decoration: underline}
+
+
+
