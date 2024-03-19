@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>JUERGA FLAMENCA | Viste con pasión, baila con estilo</title>
+        <meta charset="utf-8">
+        <link rel="stylesheet" type="text/css" href="estilos.css"/>
+    </head>
+    <body>
+        <h1>CONTACTA CON NOSOTROS</h1>
+        <hr id="separador">
+        <br>
+        <br>
+        <form>
+            <div id="identifícate">
+                <table class="tabla">
+                    <caption><b>IDENTIFÍCATE</b></caption>
+                    <tr >
+                        <td><label for ='nombre'>Nombre:</label></td>
+                        <td><input id='nombre' type='text' required>
+                    </tr>
+                    <tr>
+                        <td><label for ='apellidos'>Apellidos:</label></td>
+                        <td><input type='text' id='apellidos' required></td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <label for ='email'>Email:</label>
+                            <input type ="email" id='email' placeholder="example@gmail.com" required>
+                        </td>
+                        <td>
+                            <label for="telefono">Teléfono:</label>
+                            <input type="tel" id="telefono" name="telefono"
+                            pattern="[0-9]{3}-[0-9]{3}-[0-9]{3}" placeholder="000-000-000" required>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td> 
+                            <label for="birth">Fecha de nacimiento:</label>
+                            <input type="date" id="birth" name="cumpleaños" value="2023-12-31" required>
+                        </td>
+                        <td>
+                            <label for="DNI">NIE/DNI:</label>
+                            <input id="DNI" type="text" pattern="[0-9]{8}[A-Z]" placeholder="00000000K" required>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <label for ='provincias'>Provincia:</label>
+                        </td>
+                        <td>
+                            <input list="provincia" name="provincia" id="provincias" required>
+                            <datalist id="provincia">
+                                <option value="Sevilla"></option>
+                                <option value="Córdoba"></option>
+                                <option value="Huelva"></option>
+                                <option value="Cádiz"></option>
+                                <option value="Jaén"></option>
+                                <option value="Málaga"></option>
+                                <option value="Almería"></option>
+                                <option value="Granada"></option>   
+                            </datalist>
+                        </td>
+                    </tr>
+                </table>
+            </div>
+            <br>
+            <br>
+            <br>
+            <div id='informacion'>
+                <table class="tabla">
+                    <caption><b>INFÓRMANOS SOBRE TU PROBLEMA</b></caption>
+                    <tr>
+                        <td><label for ='detalle'>¿Cuál es el motivo?</label></td>
+                        <td>
+                            <input type='radio' name='motivo' id='detalle' value='Devolución'>Devolución<br>
+                            <input type='radio' name='motivo' value='Fallos con el pago'>Fallos con el pago<br>
+                            <input type='radio' name='motivo' value='Información sobre su pedido'>Información sobre su pedido<br>
+                            <input type='radio' name='motivo' value='Otro'>Otro<br>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td><label for ='desarrollo'>Detállanos su problema:</label></td>
+                        <td><textarea id ='desarrollo' cols=60 rows="10">Escriba su problema aquí...</textarea></td>
+                    </tr>
+                </table>
+            </div>
+            <br>
+            <br>
+            <br>
+            <div id="opinion">
+                <table class="tabla">
+                    <caption><b>TU OPINIÓN CUENTA</b></caption>
+                    <tr>
+                        <td colspan ='2'>Complete este breve formulario para ayudarnos a mejorar</td>
+                    </tr>
+                    <tr>
+                        <td><label for = 'calidad'>¿Cómo definirías la calidad de nuestros productos?</label></td>
+                        <td>
+                            <input type ='radio' id="calidad" name ='calidad' value = 'Excelente'>Excelente<br>
+                            <input type ='radio' name ='calidad' value = 'Buena'>Buena<br>
+                            <input type ='radio' name ='calidad' value = 'Media'>Media<br>
+                            <input type ='radio' name ='calidad' value = 'Mala'>Mala<br>
+                            <input type ='radio' name ='calidad' value = 'Muy mala'>Muy mala<br>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td><label for = 'facilidad'>¿Cómo definirías nuestra web?</label></td>
+                        <td>
+                            <input type ='radio' id="facilidad" name = 'facilidad' value = 'Excelente'>Excelente<br>
+                            <input type ='radio' name = 'facilidad' value = 'Buena'>Buena<br>
+                            <input type ='radio' name = 'facilidad' value = 'Media'>Media<br>
+                            <input type ='radio' name = 'facilidad' value = 'Mala'>Mala<br>
+                            <input type ='radio' name = 'facilidad' value = 'Muy mala'>Muy mala<br>   
+                        </td>
+                    </tr>
+                    
+                    <tr>
+                        <td><label for = 'servicios'>¿Cómo definirías nuestros servicios?</label></td>
+                        <td>
+                            <input type ='radio' id="servicios" name ='servicios' value = 'Excelente'>Excelente<br>
+                            <input type ='radio' name ='servicios' value = 'Buena'>Buena<br>
+                            <input type ='radio' name ='servicios' value = 'Media'>Media<br>
+                            <input type ='radio' name ='servicios' value = 'Mala'>Mala<br>
+                            <input type ='radio' name ='servicios' value = 'Muy mala'>Muy mala<br>   
+                        </td>
+                    </tr>
+                    <tr>
+                        <td><label for = 'Envíos'>¿Cómo definirías nuestros servicios de envío?</label></td>
+                        <td>
+                            <input type ='radio' id="Envíos" name = 'envios' value = 'Excelente'>Excelente<br>
+                            <input type ='radio' name = 'envios' value = 'Buena'>Buena<br>
+                            <input type ='radio' name = 'envios' value = 'Media'>Media<br>
+                            <input type ='radio' name = 'envios' value = 'Mala'>Mala<br>
+                            <input type ='radio' name = 'envios' value = 'Muy mala'>Muy mala<br>   
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Escriba su opinión sobre nuestro negocio:</td>
+                        <td><textarea rows= 10 cols=50></textarea></td>
+                    </tr>
+                </table>
+            </div>
+            <br>
+            <br>
+            <br>
+            <div id="enviar">
+                <table class="tabla"> 
+                    <caption><b>¡NO OLVIDE MANDARLO!</b></caption>
+                    <tr>
+                        <td><input type ='reset' value='BORRAR'></td>
+                        <td><input type ='submit' value='ENVIAR'></td>
+                    </tr>
+                </table>
+            </div>
+        </form>
+        <br>
+        <br>
+        <hr>
+        <footer id="footer"> Esta página web ha sido creada con fines didácticos</footer>   
+    </body>
+</html>
